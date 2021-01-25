@@ -1,0 +1,1543 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<title>作业提交</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="../assets/plugins/bootstrap-datepicker/css/bootstrap-4.2.1.min.css">
+
+<!-- 插件css -->
+<link href="main.css" type="text/css" />
+
+<!-- Core css -->
+<link rel="stylesheet" href="../assets/css/style.min.css"/>
+</head>
+
+<body class="font-muli theme-cyan gradient">
+
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+    </div>
+</div>
+
+<div id="main_content">
+    <!-- 左边边栏 -->
+    <div id="header_top" class="header_top">
+        <div class="container">
+            <div class="hleft">
+                <a class="header-brand" href="index.html"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
+                    <a href="page-search.html" class="nav-link icon"><i class="fe fe-search" data-toggle="tooltip" data-placement="right" title="搜索"></i></a>
+                    <a href="app-email.html" class="nav-link icon app_inbox"><i class="fa fa-bell" data-toggle="tooltip" data-placement="right" title="通知"></i></a>
+                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fe fe-settings" data-toggle="tooltip" data-placement="right" title="设置"></i></a>
+                </div>
+            </div>
+            <div class="hright">
+                <a href="javascript:void(0)" class="nav-link icon right_tab"><i class="fe fe-align-right"></i></a>
+                <a href="login.html" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+            </div>
+        </div>
+    </div>
+    <!-- 右栏设置框 -->
+    <div id="rightsidebar" class="right_sidebar">
+        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Settings" aria-expanded="true">设置</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#activity" aria-expanded="false">通知</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane vivify fadeIn active" id="Settings" aria-expanded="true">
+                <div class="mb-4">
+                    <h6 class="font-14 font-weight-bold text-muted">主题颜色</h6>
+                    <ul class="choose-skin list-unstyled mb-0">
+                        <li data-theme="azure"><div class="azure"></div></li>
+                        <li data-theme="indigo"><div class="indigo"></div></li>
+                        <li data-theme="purple"><div class="purple"></div></li>
+                        <li data-theme="orange"><div class="orange"></div></li>
+                        <li data-theme="green"><div class="green"></div></li>
+                        <li data-theme="cyan" class="active"><div class="cyan"></div></li>
+                        <li data-theme="blush"><div class="blush"></div></li>
+                        <li data-theme="white"><div class="bg-white"></div></li>
+                    </ul>
+                    <h6 class="font-14 font-weight-bold mt-4 text-muted">通用设置</h6>
+                    <ul class="setting-list list-unstyled mt-1 setting_switch">
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">夜间模式</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">修复导航栏顶部</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">头部变暗</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-pageheader">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">小边栏变暗</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-min_sidebar">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">主边栏变暗</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-sidebar">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">图标颜色</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-iconcolor">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">渐变色</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-gradient">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">框影</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxshadow">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">盒子布局</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxlayout">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary btn-block mt-3">更新设置</button>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane vivify fadeIn" id="activity" aria-expanded="false">
+                <ul class="new_timeline mt-3">
+                    <li>
+                        <div class="bullet pink"></div>
+                        <div class="time">11:00am</div>
+                        <div class="desc">
+                            <h3>参加</h3>
+                            <h4>网课</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet pink"></div>
+                        <div class="time">11:30am</div>
+                        <div class="desc">
+                            <h3>参加课外活动</h3>
+                            <h4>“志愿者活动”</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet green"></div>
+                        <div class="time">12:00pm</div>
+                        <div class="desc">
+                            <h3>组建队伍</h3>
+                            <h4>视频群聊</h4>
+                            <ul class="list-unstyled team-info margin-0 p-t-5">                                            
+                                <li><img src="../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
+                                <li><img src="../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
+                                <li><img src="../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
+                                <li><img src="../assets/images/xs/avatar4.jpg" alt="Avatar"></li>                                            
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet green"></div>
+                        <div class="time">2:00pm</div>
+                        <div class="desc">
+                            <h3>回应需求</h3>
+                            <a href="javascript:void(0)">“亲切的机会”</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet orange"></div>
+                        <div class="time">1:30pm</div>
+                        <div class="desc">
+                            <h3>午休</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet green"></div>
+                        <div class="time">2:38pm</div>
+                        <div class="desc">
+                            <h3>结束</h3>
+                            <h4>回家</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 快捷菜单 -->
+    <div class="user_div">
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#righttab-statistics">数据</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#righttab-Result">作业</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#righttab-Students">同学</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#righttab-Todo">计划</a></li>
+        </ul>
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="righttab-statistics" role="tabpanel">
+                <div class="card">
+                    <div class="card-body">
+                        <div>学习时长</div>
+                        <div class="py-3 m-0 text-center h1 text-success">200min</div>
+                        <div class="d-flex">
+                            <span class="text-muted">时长</span>
+                            <div class="ml-auto"><i class="fa fa-caret-up text-success"></i>4%</div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-3">
+                                <div class="clearfix">
+                                    <div class="float-left"><strong>240min</strong></div>
+                                    <div class="float-right"><small class="text-muted">班级平均学习时长</small></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="clearfix">
+                                    <div class="float-left"><strong>180min</strong></div>
+                                    <div class="float-right"><small class="text-muted">总平均学习时长</small></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body top_counter">
+                        <div class="icon bg-yellow"><i class="fa fa-users"></i> </div>
+                        <div class="content">
+                            <span>总做题数</span>
+                            <h5 class="number mb-0">2,051</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body top_counter">
+                        <div class="icon bg-gray"><i class="fa fa-sitemap"></i> </div>
+                        <div class="content">
+                            <span>准确率</span>
+                            <h5 class="number mb-0">84%</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body top_counter">
+                        <div class="icon bg-dark"><i class="fa fa-black-tie"></i> </div>
+                        <div class="content">
+                            <span>学习课时数</span>
+                            <h5 class="number mb-0">27</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body top_counter">
+                        <div class="icon bg-azure"><i class="fa fa-tags"></i> </div>
+                        <div class="content">
+                            <span>作业提交数</span>
+                            <h5 class="number mb-0">31</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body top_counter">
+                        <div class="icon bg-cyan"><i class="fa fa-map-o"></i> </div>
+                        <div class="content">
+                            <span>未回顾错题数</span>
+                            <h5 class="number mb-0">52</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="righttab-Result" role="tabpanel">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">10.2日作业</h3>
+                        <div class="card-options">
+                            <a href="#"><i class="fa fa-file-excel-o" data-toggle="tooltip" title="Export Excel"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="clearfix">
+                                    <div class="float-left"><strong>87%</strong></div>
+                                    <div class="float-right"><small class="text-muted">选择题</small></div>
+                                </div>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar bg-azure" role="progressbar" style="width: 87%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="clearfix">
+                                    <div class="float-left"><strong>80%</strong></div>
+                                    <div class="float-right"><small class="text-muted">填空题</small></div>
+                                </div>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar bg-green" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="clearfix">
+                                    <div class="float-left"><strong>63%</strong></div>
+                                    <div class="float-right"><small class="text-muted">简答题</small></div>
+                                </div>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar bg-orange" role="progressbar" style="width: 63%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col-6 border-right">
+                                <label class="mb-0">总分</label>
+                                <div class="font-20 font-weight-bold">1,00</div>
+                            </div>
+                            <div class="col-6">
+                                <label class="mb-0">得分</label>
+                                <div class="font-20 font-weight-bold">80</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">10.5日作业</h3>
+                        <div class="card-options">
+                            <a href="#"><i class="fa fa-file-excel-o" data-toggle="tooltip" title="Export Excel"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="clearfix">
+                                    <div class="float-left"><strong>80%</strong></div>
+                                    <div class="float-right"><small class="text-muted">选择题</small></div>
+                                </div>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar bg-green" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="clearfix">
+                                    <div class="float-left"><strong>87%</strong></div>
+                                    <div class="float-right"><small class="text-muted">填空题</small></div>
+                                </div>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar bg-azure" role="progressbar" style="width: 87%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="clearfix">
+                                    <div class="float-left"><strong>91%</strong></div>
+                                    <div class="float-right"><small class="text-muted">简答题</small></div>
+                                </div>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar bg-indigo" role="progressbar" style="width: 91%" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row text-center">
+                            <div class="col-6 border-right">
+                                <label class="mb-0">总分</label>
+                                <div class="font-20 font-weight-bold">100</div>
+                            </div>
+                            <div class="col-6">
+                                <label class="mb-0">得分</label>
+                                <div class="font-20 font-weight-bold">92</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="righttab-Students" role="tabpanel">
+                <div id="users">
+                    <div class="input-group mt-2 mb-2">
+                        <input type="text" class="form-control search" placeholder="找人">
+                    </div>
+                    <ul class="right_chat list-unstyled list">
+                        <li class="alfabet">A</li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">安琪拉</span>
+                                    <span class="message">1班</span>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar2.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">阿轲</span>
+                                    <span class="message">2班</span>
+                                </div>
+                            </a>                            
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar3.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">阿骨朵</span>
+                                    <span class="message">2班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="alfabet">B</li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">百里守约</span>
+                                    <span class="message">3班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="alfabet">C</li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar5.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">曹操</span>
+                                    <span class="message">3班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar6.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">程咬金</span>
+                                    <span class="message">4班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar7.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">嫦娥</span>
+                                    <span class="message">4班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="alfabet">D</li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar8.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">貂蝉</span>
+                                    <span class="message">4班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar9.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">狄仁杰</span>
+                                    <span class="message">4班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="alfabet">G</li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar8.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">公孙离</span>
+                                    <span class="message">3班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar9.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">高渐离</span>
+                                    <span class="message">4班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar10.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">干将</span>
+                                    <span class="message">4班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="alfabet">S</li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">孙尚香</span>
+                                    <span class="message">3班</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="alfabet">W</li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name">王昭君</span>
+                                    <span class="message">2班</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user_chatbody chat_app">
+                    <div class="card-header bline pt-1 pl-0 pr-0">
+                        <h3 class="card-title">安琪拉 <small>在线</small></h3>
+                        <div class="card-options">
+                            <a href="javascript:void(0)" class="p-1" data-toggle="dropdown"><i class="fa fa-cog"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                <a class="dropdown-item active" href="#">在线</a>
+                                <a class="dropdown-item" href="#">离线</a>
+                                <a class="dropdown-item" href="#">请勿打扰</a>
+                                <a class="dropdown-item" href="#">隐身</a>
+                            </div>
+                            <a href="javascript:void(0)" class="p-1 chat_close"><i class="fa fa-close"></i></a>
+                        </div>
+                    </div>
+                    <div class="chat_windows">
+                        <ul class="mb-0">
+                            <li class="other-message">
+                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <div class="message">
+                                    <p class="bg-light-blue">你好呀！！</p>
+                                    <span class="time">10:10 AM, Today</span>
+                                </div>
+                            </li>    
+                            <li class="other-message">
+                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <div class="message">
+                                    <p class="bg-light-blue">你好，平平！</p>
+                                    <p class="bg-light-blue">我是安琪拉。</p>
+                                    <span class="time">10:15 AM, Today</span>
+                                </div>
+                            </li>                                    
+                            <li class="my-message">
+                                <div class="message">
+                                    <p class="bg-light-gray">我写好表格了，发你</p>
+                                    <div class="file_folder">
+                                        <a href="javascript:void(0);">
+                                            <div class="icon">
+                                                <i class="fa fa-file-excel-o text-success"></i>
+                                            </div>
+                                            <div class="file-name">
+                                                <p class="mb-0 text-muted">统计2020.xls</p>
+                                                <small>大小: 68KB</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <span class="time">10:17 AM, Today</span>
+                                </div>
+                            </li>
+                            <li class="other-message">
+                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <div class="message">
+                                    <div class="media_img">
+                                        <img src="../assets/images/gallery/1.jpg" class="w100 img-thumbnail" alt="">
+                                        <img src="../assets/images/gallery/2.jpg" class="w100 img-thumbnail" alt="">
+                                    </div>
+                                    <span class="time">10:15 AM, Today</span>
+                                </div>
+                            </li> 
+                            <li class="other-message">
+                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <div class="message">                                            
+                                    <p class="bg-light-blue">太棒了！！</p>
+                                    <span class="time">10:18 AM, Today</span>
+                                </div>
+                            </li>
+                            <li class="my-message">
+                                <div class="message">
+                                    <p class="bg-light-gray">还有些我需要完善</p>
+                                    <span class="time">10:25 AM, Today</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="chat-message clearfix">
+                            <a href="javascript:void(0);"><i class="icon-camera"></i></a>
+                            <a href="javascript:void(0);"><i class="icon-camcorder"></i></a>
+                            <a href="javascript:void(0);"><i class="icon-paper-plane"></i></a>
+                            <div class="input-group mb-0">
+                                <input type="text" class="form-control" placeholder="输入">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="righttab-Todo" role="tabpanel">
+                <ul class="list-unstyled mb-0 todo_list">
+                    <li>
+                        <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                            <span class="custom-control-label">预习必修一第一单元第一课</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                            <span class="custom-control-label">做必修一第一单元第一课练习</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked="">
+                            <span class="custom-control-label">做错题整理</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
+                            <span class="custom-control-label">做笔记</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 启动主左栏导航 -->
+    <div id="left-sidebar" class="sidebar">
+        <h5 class="brand-name">PHYEDU<a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-uni">学习中心</a></li>
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-admin">个人中心</a></li>
+        </ul>
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
+                <nav class="sidebar-nav">
+                    <ul class="metismenu">
+                        <li><a href="taskboard.html"><i class="fa fa-list-ul"></i><span>学习中心</span></a></li>
+                        <li class="active"><a href="library.html"><i class="fa fa-book"></i><span>资料试题</span></a></li>
+                        <li><a href="courses.html"><i class="fa fa-graduation-cap"></i><span>网课视频</span></a></li> 
+                        <li><a href="professors.html"><i class="fa fa-link"></i><span>教材链接</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="tab-pane fade" id="menu-admin" role="tabpanel">
+                <nav class="sidebar-nav">
+                    <ul class="metismenu">  
+                        <li><a href="index.html"><i class="fa fa-dashboard"></i><span>个人中心</span></a></li>
+                        <li><a href="events.html"><i class="fa fa-calendar"></i><span>学习计划</span></a></li>
+                        <li><a href="app-social.html"><i class="fe fe-share-2"></i><span>智能反馈</span></a></li>
+                        <li class="active"><a href="app-filemanager.html"><i class="fa fa-folder"></i><span>作业管理</span></a></li>
+                        <li><a href="gallery.html"><i class="fa fa-camera-retro"></i><span>笔记中心</span></a></li>
+                        <li><a href="setting.html"><i class="fe fe-user"></i></i><span>个人信息</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- 开始项目内容区 -->
+    <div class="page">
+        <!-- 起始页标题 -->
+        <div class="section-body" id="page_top">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">                        
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="输入搜索内容">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">搜索</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="notification d-flex">
+                            <!-- 留言 -->
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge badge-success nav-unread"></span></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <ul class="right_chat list-unstyled w350 p-0">
+                                        <li class="online">
+                                            <a href="javascript:void(0);" class="media">
+                                                <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Donald Gardner</span>
+                                                    <div class="message">It is a long established fact that a reader</div>
+                                                    <small>11 mins ago</small>
+                                                    <span class="badge badge-outline status"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="online">
+                                            <a href="javascript:void(0);" class="media">
+                                                <img class="media-object " src="../assets/images/xs/avatar5.jpg" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Wendy Keen</span>
+                                                    <div class="message">There are many variations of passages of Lorem Ipsum</div>
+                                                    <small>18 mins ago</small>
+                                                    <span class="badge badge-outline status"></span>
+                                                </div>
+                                            </a>                            
+                                        </li>
+                                        <li class="offline">
+                                            <a href="javascript:void(0);" class="media">
+                                                <img class="media-object " src="../assets/images/xs/avatar2.jpg" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Matt Rosales</span>
+                                                    <div class="message">Contrary to popular belief, Lorem Ipsum is not simply</div>
+                                                    <small>27 mins ago</small>
+                                                    <span class="badge badge-outline status"></span>
+                                                </div>
+                                            </a>                            
+                                        </li>
+                                        <li class="online">
+                                            <a href="javascript:void(0);" class="media">
+                                                <img class="media-object " src="../assets/images/xs/avatar3.jpg" alt="">
+                                                <div class="media-body">
+                                                    <span class="name">Phillip Smith</span>
+                                                    <div class="message">It has roots in a piece of classical Latin literature from 45 BC</div>
+                                                    <small>33 mins ago</small>
+                                                    <span class="badge badge-outline status"></span>
+                                                </div>
+                                            </a>                            
+                                        </li>                        
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="javascript:void(0)" class="dropdown-item text-center text-muted-dark readall">Mark all as read</a>
+                                </div>
+                            </div>
+                            <!-- 消息提示 -->
+                            <div class="dropdown d-flex">
+                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-primary nav-unread"></span></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <ul class="list-unstyled feeds_widget">
+                                        <li>
+                                            <div class="feeds-left">
+                                                <span class="avatar avatar-blue"><i class="fa fa-check"></i></span>
+                                            </div>
+                                            <div class="feeds-body ml-3">
+                                                <p class="text-muted mb-0">Campaign <strong class="text-blue font-weight-bold">Holiday</strong> is nearly reach budget limit.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feeds-left">
+                                                <span class="avatar avatar-green"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <div class="feeds-body ml-3">
+                                                <p class="text-muted mb-0">New admission <strong class="text-green font-weight-bold">32</strong> in computer department.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feeds-left">
+                                                <span class="avatar avatar-red"><i class="fa fa-info"></i></span>
+                                            </div>
+                                            <div class="feeds-body ml-3">
+                                                <p class="text-muted mb-0">6th sem result <strong class="text-red font-weight-bold">67%</strong> in computer department.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="feeds-left">
+                                                <span class="avatar avatar-azure"><i class="fa fa-thumbs-o-up"></i></span>
+                                            </div>
+                                            <div class="feeds-body ml-3">
+                                                <p class="text-muted mb-0">New Feedback <strong class="text-azure font-weight-bold">53</strong> for university assessment.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="javascript:void(0)" class="dropdown-item text-center text-muted-dark readall">Mark all as read</a>
+                                </div>
+                            </div>
+                            <div class="dropdown d-flex">
+                                <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
+                                    <span class="avatar" style="background-image: url(../assets/images/xs/avatar5.jpg)"></span> 平平</a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a class="dropdown-item" href="app-setting.html"><i class="dropdown-icon fe fe-user"></i> 个人信息</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="app-chat.html"><i class="dropdown-icon fe fe-help-circle"></i> 问题反馈</a>
+                                    <a class="dropdown-item" href="login.html"><i class="dropdown-icon fe fe-log-out"></i> 退出登录</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Page title and tab -->
+        <div class="section-body">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div class="header-action">
+                        <h1 class="page-title">（精校版）2020年江苏卷物理高考试题</h1>
+                        <ol class="breadcrumb page-breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">资料试题</a></li>
+                            <li class="breadcrumb-item"><a href="#">高考真题</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">2020年江苏卷物理高考试题</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="" method="post">
+            <div class="test_content">
+                <div class="test_content_title">
+                    <h2>一、单项选择题：每小题只有一个选项符合题意.</h2>
+                    <p>
+                        <span>共</span><i class="content_lit">5</i><span>题，</span><span>每小题</span><i class="content_fs">3</i><span>分，</span></span><span>合计</span><i class="content_fs">15</i><span>分</span>
+                    </p>
+                </div>
+            </div>
+            <div class="test_content_nr">
+                <ul>
+
+                    <li id="qu_0_0">
+                        <div class="test_content_nr_tt">
+                            <i>1</i><font>1.质量为</font><img src="images/1-1.png"><font> 的汽车在水平路面上匀速行驶，速度为</font><img src="images/1-2.png"><font> ，受到的阻力大小为</font><img src="images/1-3.png"><font>.此时，汽车发动机输出的实际功率是（    ）</font><b class="icon iconfont">&#xe881;</b>
+                        </div>
+
+                        <div class="test_content_nr_main">
+                            <ul>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer1"
+                                           id="0_answer_1_option_1"
+                                    />
+
+
+                                    <label for="0_answer_1_option_1">
+                                        A.
+                                        <p class="ue" style="display: inline;">90kW</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer1"
+                                           id="0_answer_1_option_2"
+                                    />
+
+
+                                    <label for="0_answer_1_option_2">
+                                        B.
+                                        <p class="ue" style="display: inline;">30kW</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer1"
+                                           id="0_answer_1_option_3"
+                                    />
+
+
+                                    <label for="0_answer_1_option_3">
+                                        C.
+                                        <p class="ue" style="display: inline;">36kW</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer1"
+                                           id="0_answer_1_option_4"
+                                    />
+
+
+                                    <label for="0_answer_1_option_4">
+                                        D.
+                                        <p class="ue" style="display: inline;">300kW</p>
+                                    </label>
+                                </li>
+                                <p style="color: #00aa88">正确：C</p>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="qu_0_1">
+                        <div class="test_content_nr_tt">
+                            <i>2</i><font>2.电流互感器是一种测量电路中电流的变压器，工作原理如图所示.其原线圈匝数较少，串联在电路中，副线圈匝数较多，两端接在电流表上.则电流互感器（    ）</font><b class="icon iconfont">&#xe881;</b>
+                            <br><img src="images/2.png">
+                        </div>
+
+                        <div class="test_content_nr_main">
+                            <ul>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer2"
+                                           id="0_answer_2_option_1"
+                                    />
+
+
+                                    <label for="0_answer_2_option_1">
+                                        A.
+                                        <p class="ue" style="display: inline;">是一种降压变压器</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer2"
+                                           id="0_answer_2_option_2"
+                                    />
+
+
+                                    <label for="0_answer_2_option_2">
+                                        B.
+                                        <p class="ue" style="display: inline;">能测量直流电路的电流</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer2"
+                                           id="0_answer_2_option_3"
+                                    />
+
+
+                                    <label for="0_answer_2_option_3">
+                                        C.
+                                        <p class="ue" style="display: inline;">原、副线圈电流的频率不同</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer2"
+                                           id="0_answer_2_option_4"
+                                    />
+
+
+                                    <label for="0_answer_2_option_4">
+                                        D.
+                                        <p class="ue" style="display: inline;">副线圈的电流小于原线圈的电流</p>
+                                    </label>
+                                </li>
+                                <p style="color: #d44950">错误</p>
+                                <p style="color: #0f6c8d">错解：<br>正解：D</p>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="qu_0_2">
+                        <div class="test_content_nr_tt">
+                            <i>3</i><font>3.如图所示，两匀强磁场的磁感应强度B1和B2大小相等、方向相反.金属圆环的直径与两磁场的边界重合.下列变化会在环中产生顺时针方向感应电流的是（    ）</font><b class="icon iconfont">&#xe881;</b>
+                            <br><img src="images/3.png">
+                        </div>
+
+                        <div class="test_content_nr_main">
+                            <ul>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer3"
+                                           id="0_answer_3_option_1"
+                                    />
+
+
+                                    <label for="0_answer_3_option_1">
+                                        A.
+                                        <p class="ue" style="display: inline;">同时增大B1减小B2</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer3"
+                                           id="0_answer_3_option_2"
+                                    />
+
+
+                                    <label for="0_answer_3_option_2">
+                                        B.
+                                        <p class="ue" style="display: inline;">同时减小B1增大B2</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer3"
+                                           id="0_answer_3_option_3"
+                                    />
+
+
+                                    <label for="0_answer_3_option_3">
+                                        C.
+                                        <p class="ue" style="display: inline;">同时以相同的变化率增大B1和B2</p>
+                                    </label>
+                                </li>
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer3"
+                                           id="0_answer_3_option_4"
+                                    />
+
+
+                                    <label for="0_answer_3_option_4">
+                                        D.
+                                        <p class="ue" style="display: inline;">同时以相同的变化率减小B1和B2</p>
+                                    </label>
+                                </li>
+                                <p style="color: #00aa88">正确：B</p>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="qu_0_3">
+                        <div class="test_content_nr_tt">
+                            <i>4</i><font>如图所示，一小物块由静止开始沿斜面向下滑动，最后停在水平地面上.斜面和地面平滑连接，且物块与斜面、物块与地面间的动摩擦因数均为常数.该过程中，物块的动能Ek与水平位移x关系的图象是（    ）</font><b class="icon iconfont">&#xe881;</b>
+                            <img src="images/4.png">
+                        </div>
+
+                        <div class="test_content_nr_main">
+                            <ul>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer4"
+                                           id="0_answer_4_option_1"
+                                    />
+
+
+                                    <label for="0_answer_4_option_1">
+                                        A.
+                                        <p class="ue" style="display: inline;"><img src="images/4-1.png"></p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer4"
+                                           id="0_answer_4_option_2"
+                                    />
+
+
+                                    <label for="0_answer_4_option_2">
+                                        B.
+                                        <p class="ue" style="display: inline;"><img src="images/4-2.png"></p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer4"
+                                           id="0_answer_4_option_3"
+                                    />
+
+
+                                    <label for="0_answer_4_option_3">
+                                        C.
+                                        <p class="ue" style="display: inline;"><img src="images/4-3.png"></p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer4"
+                                           id="0_answer_4_option_4"
+                                    />
+
+
+                                    <label for="0_answer_4_option_4">
+                                        D.
+                                        <p class="ue" style="display: inline;"><img src="images/4-4.png"></p>
+                                    </label>
+                                </li>
+                                <p style="color: #00aa88">正确：A</p>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="qu_0_4">
+                        <div class="test_content_nr_tt">
+                            <i>5</i><font>5.中欧班列在欧亚大陆开辟了“生命之路”，为国际抗疫贡献了中国力量.某运送防疫物资的班列由40节质量相等的车厢组成，在车头牵引下，列车沿平直轨道匀加速行驶时，第2节对第3节车厢的牵引力为F.若每节车厢所受摩擦力、空气阻力均相等，则倒数第3节对倒数第2节车厢的牵引力为（    ）</font><b class="icon iconfont">&#xe881;</b>
+                        </div>
+
+                        <div class="test_content_nr_main">
+                            <ul>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer5"
+                                           id="0_answer_5_option_1"
+                                    />
+
+
+                                    <label for="0_answer_5_option_1">
+                                        A.
+                                        <p class="ue" style="display: inline;">F</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer5"
+                                           id="0_answer_5_option_2"
+                                    />
+
+
+                                    <label for="0_answer_5_option_2">
+                                        B.
+                                        <p class="ue" style="display: inline;"><img src="images/5-2.png"></p>
+                                    </label>
+                                </li>
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer5"
+                                           id="0_answer_5_option_3"
+                                    />
+
+
+                                    <label for="0_answer_5_option_3">
+                                        C.
+                                        <p class="ue" style="display: inline;"><img src="images/5-3.png"></p>
+                                    </label>
+                                </li>
+                                <li class="option">
+
+                                    <input type="radio" class="radioOrCheck" name="answer5"
+                                           id="0_answer_5_option_4"
+                                    />
+
+
+                                    <label for="0_answer_5_option_4">
+                                        C.
+                                        <p class="ue" style="display: inline;"><img src="images/5-4.png"></p>
+                                    </label>
+                                </li>
+                                <p style="color: #00aa88">正确：C</p>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="test_content">
+                <div class="test_content_title">
+                    <h2>二、多项选择题：全部选对的得4分，选对但不全的得2分，错选或不答的得0分.</h2>
+                    <p>
+                        <span>共</span><i class="content_lit">4</i><span>题，</span><span>每小题</span><i class="content_fs">4</i><span>分，</span></span><span>合计</span><i class="content_fs">16</i><span>分</span>
+                    </p>
+                </div>
+            </div>
+            <div class="test_content_nr">
+                <ul>
+
+                    <li id="qu_1_0">
+                        <div class="test_content_nr_tt">
+                            <i>6</i><font>某汽车的电源与启动电机、车灯连接的简化电路如图所示.当汽车启动时，开关S闭合，电机工作，车灯突然变暗，此时（    ）</font><b class="icon iconfont">&#xe881;</b>
+                            <img src="images/6.png">
+                        </div>
+
+                        <div class="test_content_nr_main">
+                            <ul>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer1"
+                                           id="1_answer_1_option_1"
+                                    />
+
+                                    <label for="1_answer_1_option_1">
+                                        A.
+                                        <p class="ue" style="display: inline;">车灯的电流变小</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer1"
+                                           id="1_answer_1_option_2"
+                                    />
+
+                                    <label for="1_answer_1_option_2">
+                                        B.
+                                        <p class="ue" style="display: inline;">路端电压变小</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer1"
+                                           id="1_answer_1_option_3"
+                                    />
+
+                                    <label for="1_answer_1_option_3">
+                                        C.
+                                        <p class="ue" style="display: inline;">电路的总电流变小</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer1"
+                                           id="1_answer_1_option_4"
+                                    />
+
+                                    <label for="1_answer_1_option_4">
+                                        D.
+                                        <p class="ue" style="display: inline;">电源的总功率变大</p>
+                                    </label>
+                                </li>
+                                <p style="color: #d44950">错误</p>
+                                <p style="color: #0f6c8d">错解：<br>正解：ABD</p>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="qu_1_1">
+                        <div class="test_content_nr_tt">
+                            <i>7</i><font>甲、乙两颗人造卫星质量相等，均绕地球做圆周运动，甲的轨道半径是乙的2倍.下列应用公式进行的推论正确的有（    ）</font><b class="icon iconfont">&#xe881;</b>
+                        </div>
+
+                        <div class="test_content_nr_main">
+                            <ul>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer2"
+                                           id="1_answer_2_option_1"
+                                    />
+
+                                    <label for="1_answer_2_option_1">
+                                        A.
+                                        <p class="ue" style="display: inline;">由<img src="images/7-1-1.png">可知，甲的速度是乙的<img src="images/7-1-2.png">倍</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer2"
+                                           id="1_answer_2_option_2"
+                                    />
+
+                                    <label for="1_answer_2_option_2">
+                                        B.
+                                        <p class="ue" style="display: inline;">由<img src="images/7-2-1.png">可知，甲的向心加速度是乙的2倍</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer2"
+                                           id="1_answer_2_option_3"
+                                    />
+
+                                    <label for="1_answer_2_option_3">
+                                        C.
+                                        <p class="ue" style="display: inline;">由<img src="images/7-3-1.png">可知，甲的向心力是乙的<img src="images/7-3-2.png"></p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer2"
+                                           id="1_answer_2_option_4"
+                                    />
+
+                                    <label for="1_answer_2_option_4">
+                                        D.
+                                        <p class="ue" style="display: inline;">由<img src="images/7-4-1.png">可知，甲的周期是乙的<img src="images/7-4-2.png">倍</p>
+                                    </label>
+                                </li>
+                                <p style="color: #d44950">错误</p>
+                                <p style="color: #0f6c8d">错解：<br>正解：CD</p>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="qu_1_2">
+                        <div class="test_content_nr_tt">
+                            <i>8</i><font>如图所示，小球A、B分别从</font><img src="images/8-1.png"><font>和l的高度水平抛出后落地，上述过程中A、B的水平位移分别为l和</font><img src="images/8-1.png"><font>.忽略空气阻力，则</font><b class="icon iconfont">&#xe881;</b>
+                        </div>
+
+                        <div class="test_content_nr_main">
+                            <ul>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer3"
+                                           id="1_answer_3_option_1"
+                                    />
+
+                                    <label for="1_answer_3_option_1">
+                                        A.
+                                        <p class="ue" style="display: inline;">A和B的位移大小相等</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer3"
+                                           id="1_answer_3_option_2"
+                                    />
+
+                                    <label for="1_answer_3_option_2">
+                                        B.
+                                        <p class="ue" style="display: inline;">A的运动时间是B的2倍</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer3"
+                                           id="1_answer_3_option_3"
+                                    />
+
+                                    <label for="1_answer_3_option_3">
+                                        C.
+                                        <p class="ue" style="display: inline;">A的初速度是B的<img src="images/8-1.png"></p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer3"
+                                           id="1_answer_3_option_4"
+                                    />
+
+                                    <label for="1_answer_3_option_4">
+                                        D.
+                                        <p class="ue" style="display: inline;">A的末速度比B的大</p>
+                                    </label>
+                                </li>
+                                <p style="color: #00aa88">正确：AD</p>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li id="qu_1_3">
+                        <div class="test_content_nr_tt">
+                            <i>9</i><font>如图所示，绝缘轻杆的两端固定带有等量异号电荷的小球（不计重力）.开始时，两小球分别静止在A、B位置.现外加一匀强电场E，在静电力作用下，小球绕轻杆中点O转到水平位置.取O点的电势为0.下列说法正确的有（    ）</font><b class="icon iconfont">&#xe881;</b>
+                            <img src="images/9.png">
+                        </div>
+
+                        <div class="test_content_nr_main">
+                            <ul>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer4"
+                                           id="1_answer_4_option_1"
+                                    />
+
+                                    <label for="1_answer_4_option_1">
+                                        A.
+                                        <p class="ue" style="display: inline;">电场E中A点电势低于B点</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer4"
+                                           id="1_answer_4_option_2"
+                                    />
+
+                                    <label for="1_answer_4_option_2">
+                                        B.
+                                        <p class="ue" style="display: inline;">转动中两小球的电势能始终相等</p>
+                                    </label>
+                                </li>
+
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer4"
+                                           id="1_answer_4_option_3"
+                                    />
+
+                                    <label for="1_answer_4_option_3">
+                                        C.
+                                        <p class="ue" style="display: inline;">该过程静电力对两小球均做负功</p>
+                                    </label>
+                                </li>
+                                <li class="option">
+
+
+                                    <input type="checkbox" class="radioOrCheck" name="answer4"
+                                           id="1_answer_4_option_4"
+                                    />
+
+                                    <label for="1_answer_4_option_4">
+                                        D.
+                                        <p class="ue" style="display: inline;">该过程两小球的总电势能增加</p>
+                                    </label>
+                                </li>
+                                <p style="color: #00aa88">正确：AB</p>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="test_content">
+                <div class="test_content_title">
+                    <h2>三、简答题：本题分必做题（第10~12题）和选做题（第13题）两部分，共计42分.请将解答填写在答题卡相应的位置.</h2>
+                </div>
+                <div class="test_content_nr">
+                    <ul>
+                        <li id="qu_10_0">
+                            <div class="test_content_nr_tt">
+                                <i>10</i><font>（8分）某同学描绘一种电子元件的<img src="images/10-1.png">关系图象，采用的实验电路图如题10-1图所示，为电压表，为电流表，E为电源（电动势约<img src="images/10-2.png">），R为滑动变阻器（最大阻值<img src="images/10-3.png"> ），<img src="images/10-4.png">为定值电阻，S为开关.
+                                <br>（1）请用笔画线代替导线，将题10-2图所示的实物电路连接完整.<br></font><b class="icon iconfont">&#xe881;</b>
+                                <img src="images/10-0-1.png">
+                                <img src="images/10-0-2.png">
+                            </div>
+                            <font>（2）调节滑动变阻器，记录电压表和电流表的示数如下表：</font><b class="icon iconfont">&#xe881;</b>
+                            <img src="images/10-2-1.png">
+                            <br><font>请根据表中的数据，在方格纸上作出该元件的<img src="images/10-2-2.png">图线.</font><b class="icon iconfont">&#xe881;</b>
+                            <font>（3）根据作出的图线可知，该元件是_______（选填“线性”或“非线性”）元件.</font><b class="icon iconfont">&#xe881;</b>
+                            <font>（4）在上述测量中，如果用导线代替电路中的定值电阻<img src="images/10-4-1.png">，会导致的两个后果是_______.</font><b class="icon iconfont">&#xe881;</b>
+                            <div class="test_content_nr_main">
+                                <ul>
+
+                                    <li class="option">
+
+
+                                        <input type="checkbox" class="radioOrCheck" name="answer1"
+                                               id="1_answer_1_option_1"
+                                        />
+
+                                        <label for="1_answer_1_option_1">
+                                            A.
+                                            <p class="ue" style="display: inline;">电压和电流的测量误差增大</p>
+                                        </label>
+                                    </li>
+
+                                    <li class="option">
+
+
+                                        <input type="checkbox" class="radioOrCheck" name="answer1"
+                                               id="1_answer_1_option_2"
+                                        />
+
+                                        <label for="1_answer_1_option_2">
+                                            B.
+                                            <p class="ue" style="display: inline;">可能因电流过大烧坏待测元件</p>
+                                        </label>
+                                    </li>
+
+                                    <li class="option">
+
+
+                                        <input type="checkbox" class="radioOrCheck" name="answer1"
+                                               id="1_answer_1_option_3"
+                                        />
+
+                                        <label for="1_answer_1_option_3">
+                                            C.
+                                            <p class="ue" style="display: inline;">滑动变阻器允许的调节范围变小</p>
+                                        </label>
+                                    </li>
+
+                                    <li class="option">
+
+
+                                        <input type="checkbox" class="radioOrCheck" name="answer1"
+                                               id="1_answer_1_option_4"
+                                        />
+
+                                        <label for="1_answer_1_option_4">
+                                            D.
+                                            <p class="ue" style="display: inline;">待测元件两端电压的可调节范围变小</p>
+                                        </label>
+                                    </li>
+                                    <img src="images/10-0-3.png">
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="test_content_nr">
+                    <ul>
+                        <li id="qu_11_0">
+                            <div class="test_content_nr_tt">
+                                <i>11</i><font>11.（10分）疫情期间“停课不停学”，小明同学在家自主开展实验探究.用手机拍摄物体自由下落的视频，得到分帧图片，利用图片中小球的位置来测量当地的重力加速度，实验装置如题11-1图所示.</font><b class="icon iconfont">&#xe881;</b>
+                                <br><img src="images/11-0.png">
+                            </div>
+                            （1）家中有乒乓球、小塑料球和小钢球，其中最适合用作实验中下落物体的是________.<br>
+                            （2）下列主要操作步骤的正确顺序是_______.（填写各步骤前的序号）
+                            <br>①把刻度尺竖直固定在墙上  ②捏住小球，从刻度尺旁静止释放
+                            <br>③手机固定在三角架上，调整好手机镜头的位置  ④打开手机摄像功能，开始摄像<br>
+                            （3）停止摄像，从视频中截取三帧图片，图片中的小球和刻度如题11-2图所示.已知所截取的图片相邻两帧之间的时间间隔为<img src="images/11-3-1.png">，刻度尺的分度值是<img src="images/11-3-2.png">，由此测得重力加速度为_______.<img src="images/11-3-3.png">
+                            <img src="images/11-0-2.png"><br>
+                            （4）在某次实验中，小明释放小球时手稍有晃动，视频显示小球下落时偏离了竖直方向.从该视频中截取图片，_______（选填“仍能”或“不能”）用（3）问中的方法测出重力加速度.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_content">
+                <div class="test_content_title">
+                    <h2>四、计算题：解答时请写出必要的文字说明、方程式和重要的演算步骤.只写出最后答案的不能得分.</h2>
+                </div>
+                <div class="test_content_nr">
+                    <ul>
+                        <li id="qu_11_0">
+                            <div class="test_content_nr_tt">
+                                <i>14</i><font>14.（15分）如图所示，电阻为<img src="images/14-1.png">的正方形单匝线圈<img src="images/14-2.png">的边长为<img src="images/14-3.png">，<img src="images/14-4.png">边与匀强磁场边缘重合.磁场的宽度等于线圈的边长，磁感应强度大小为<img src="images/14-5.png"> .在水平拉力作用下，线圈以<img src="images/14-6.png">的速度向右穿过磁场区域.求线圈在上述过程中</font><b class="icon iconfont">&#xe881;</b>
+                                <br><img src="images/14.png">
+                            </div>
+                            （1）感应电动势的大小E；<br>
+                            （2）所受拉力的大小F；<br>
+                            （3）感应电流产生的热量Q.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+        <button onclick="window.location.href='test.html'" type="submit" class="btn btn-primary ml-2">返回</button>
+<!-- Start Main project js, jQuery, Bootstrap -->
+<script src="../assets/bundles/lib.vendor.bundle.js"></script>
+
+<!-- Start project main js  and page js -->
+<script src="../assets/js/core.js"></script>
+    </div>
+</div>
+</body>
+</html>
